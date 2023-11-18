@@ -8,6 +8,7 @@ public class Heart : MonoBehaviour
     public Sprite heart1;
     public Sprite heart2;
     public Sprite heart3;
+    public Sprite heart4;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +22,10 @@ public class Heart : MonoBehaviour
             this.gameObject.GetComponent<SpriteRenderer>().sprite=heart1;
         }else if(health>=33){
             this.gameObject.GetComponent<SpriteRenderer>().sprite=heart2;
-        }else if(health>=0){
+        }else if(health>=1){
             this.gameObject.GetComponent<SpriteRenderer>().sprite=heart3;
+        }else if(health<1){
+            this.gameObject.GetComponent<SpriteRenderer>().sprite=heart4;
         }
         if(health>1)
             health-=.01;
