@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Heart : MonoBehaviour
 {
-    public static int health=50;
+    public static double health=100;
     public Sprite heart1;
     public Sprite heart2;
     public Sprite heart3;
@@ -24,6 +24,7 @@ public class Heart : MonoBehaviour
         }else if(health>=0){
             this.gameObject.GetComponent<SpriteRenderer>().sprite=heart3;
         }
-
+        if(health>1)
+            health-=.01;
     }
 }
