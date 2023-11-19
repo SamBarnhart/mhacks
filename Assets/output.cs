@@ -17,7 +17,6 @@ public class output : MonoBehaviour
     // BEGIN: ed8c6549bwf9
     void Update()
     {
-        Debug.Log(input.inputtxt);
         text.text = input.inputtxt; // Set the text of the object to input.inputtext
     }
     // END: ed8c6549bwf9
