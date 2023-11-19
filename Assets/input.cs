@@ -2,18 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System;
-public class healthTxt : MonoBehaviour
+public class input : MonoBehaviour
 {
-    public Text text;
+    public static string inputtxt;
     // Start is called before the first frame update
-    void Start(){
-        text.text=System.Math.Floor(Heart.health).ToString();
+    void Start()
+    {
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        text.text=System.Math.Floor(Heart.health).ToString();
+
     }
+    public void ReadStringInput(string s){
+        inputtxt=s;
+
+    }
+
 }
